@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Produto extends Model
+{
+    use SoftDeletes;
+
+    protected $fillable = [
+        'nome',
+        'descricao',
+        'quantidade',
+        'categoria_id',
+        'preco',
+        'imagem',
+        'status',
+    ];
+
+    public function categoria() {
+        return $this->belongsTo(Categoria::class);
+    }
+}
