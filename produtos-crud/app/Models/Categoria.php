@@ -10,8 +10,8 @@ class Categoria extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'nome',
-        'status',
+        "nome",
+        "status",
     ];
 
     public function produtos() {

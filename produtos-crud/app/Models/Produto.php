@@ -10,13 +10,13 @@ class Produto extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'nome',
-        'descricao',
-        'quantidade',
-        'categoria_id',
-        'preco',
-        'imagem',
-        'status',
+        "nome",
+        "descricao",
+        "quantidade",
+        "categoria_id",
+        "preco",
+        "imagem",
+        "status",
     ];
 
     public function categoria() {
