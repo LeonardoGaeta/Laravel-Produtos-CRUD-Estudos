@@ -57,7 +57,7 @@
                                     <td>{{ $produto->preco }}</td>
                                     <td>{{ $produto->status }}</td>
                                     <td>{{ $produto->descricao }}</td>
-                                    <td><a href="" class="btn btn-success">Detalhes</a></td> ///////////////////////
+                                    <td><a href="{{ route("produto.edit", $produto->id) }}">Edição</a></td>
                                 </tr>
                             @endforeach
                         @else

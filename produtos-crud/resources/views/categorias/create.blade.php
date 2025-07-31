@@ -13,7 +13,7 @@
             <div class="card-body">
                 <form action="{{ route('categoria.store') }}" method="post">
                     @csrf
-                    @include('categoria.form')
+                    @include('categorias.form')
                     <button type="submit" class="btn btn-primary">Salvar</button>
                     <a href="{{ route('categoria.index') }}" class="btn btn-secondary">Cancelar</a>
                 </form>

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                Adicionar novo produto
+                Atualizar produto
             </div>
             <div class="card-body">
                 <form action="{{ route('produto.store') }}" method="post" enctype="multipart/form-data">

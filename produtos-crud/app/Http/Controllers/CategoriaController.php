@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class CategoriaController extends Controller
 {
     public function index()  {
-        return view('categoria.categoria-list');
+        $categorias = Categoria::all();
+        return view('categorias.categoria-list', compact("categorias"));
     }
 
     public function create() {
         $categorias = Categoria::all();
-
-        return view('categoria.create', compact('categorias'));
+        return view('categorias.create', compact('categorias'));
     }
 
     public function store(Request $request){
